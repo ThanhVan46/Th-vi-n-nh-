@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #0056b3;
+}
+
+/* Khung hiển thị ảnh lớn */
+#image {
+    line-height: 300px;
+    width: 80%;
+    height: 350px;
+    border: 3px solid #333;
+    margin: 20px auto;
+    background-color: #8e9eab;
+    color: #ffffff;
+    font-size: 150%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+/* Các ảnh xem trước phía dưới */
+.preview-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.preview {
+    width: 130px;
+    height: 90px;
+    border: 2px solid #000;
+    cursor: pointer;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.preview:hover {
+    transform: scale(1.05);
+}
